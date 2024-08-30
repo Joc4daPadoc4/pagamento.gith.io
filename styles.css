@@ -1,0 +1,92 @@
+/* Estilos gerais */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto para todo o site */
+    color: #fff; /* Texto branco para contraste com o fundo preto */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para a página de pagamento */
+.pagamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Fundo preto para a seção de pagamento */
+    padding: 2rem;
+}
+
+.pagamento__caixa {
+    background: #222; /* Caixa de pagamento com um tom mais claro que o fundo */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Sombra vermelha para destacar a caixa */
+    max-width: 400px;
+    width: 100%;
+}
+
+.pagamento__titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f00; /* Título em vermelho */
+    text-align: center;
+}
+
+.pagamento__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagamento__label {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: #fff; /* Labels em branco para contraste */
+}
+
+.pagamento__input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #444; /* Borda cinza escura */
+    border-radius: 4px;
+    background-color: #333; /* Fundo dos inputs em cinza escuro */
+    color: #fff; /* Texto dos inputs em branco */
+}
+
+.pagamento__input::placeholder {
+    color: #888; /* Placeholder em cinza claro */
+}
+
+.pagamento__botao {
+    background-color: #f00; /* Botão em vermelho */
+    color: #fff; /* Texto do botão em branco */
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.pagamento__botao:hover {
+    background-color: #c00; /* Tom mais escuro de vermelho ao passar o mouse */
+}
+
+.pagamento__link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.pagamento__link a {
+    color: #f00; /* Links em vermelho */
+    text-decoration: none;
+}
+
+.pagamento__link a:hover {
+    text-decoration: underline;
+}

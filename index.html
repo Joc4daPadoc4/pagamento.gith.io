@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - TheJoc4Films</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="pagamento container">
+        <div class="pagamento__caixa">
+            <h1 class="pagamento__titulo">Complete seu pagamento e assine THEJOC4FLIX</h1>
+            <form action="confirmation.html" method="POST" class="pagamento__form">
+                <label for="nome" class="pagamento__label">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required class="pagamento__input">
+
+                <label for="email" class="pagamento__label">E-mail:</label>
+                <input type="email" id="email" name="email" required class="pagamento__input">
+
+                <label for="numero-cartao" class="pagamento__label">Número do Cartão:</label>
+                <input type="text" id="numero-cartao" name="numero-cartao" required class="pagamento__input">
+
+                <label for="data-expiracao" class="pagamento__label">Data de Expiração:</label>
+                <input type="text" id="data-expiracao" name="data-expiracao" placeholder="MM/AA" required class="pagamento__input">
+
+                <label for="cvv" class="pagamento__label">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required class="pagamento__input">
+
+                <button type="submit" class="pagamento__botao">Pagar</button>
+            </form>
+            <p class="pagamento__link"><a href="login.html">Voltar para o login</a></p>
+        </div>
+    </section>
+</body>
+
+</html>
